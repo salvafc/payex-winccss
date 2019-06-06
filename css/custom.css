@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	font-family: "Rubik", "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #1b2733;
+	text-align: left;
+	background-color: #fafafa;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-font {
+    font-size: 14px;
+}
