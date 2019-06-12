@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Payex Bulma</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
-    <!-- <link rel="stylesheet" href="css/debug.css"> -->
+    <title>Payex Tailwindcss</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/debug.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="./images/favicon.ico">
   </head>
@@ -14,25 +13,26 @@
 
 </head>
   <body>
+
     <!-- Header -->
-    <nav class="navbar">
-      <div class="container">
-        <!-- Logo Escuela -->
-        <div class="navbar-brand column">
-            <img src="./images/school-logo.png"/>
+      <div class="container mx-auto p-4">
+        <div class="flex flex-row items-center justify-between"
+          <!-- Logo Escuela -->
+          <div class="">
+              <img src="./images/school-logo.png"/>
+          </div>
+          <!-- Menu -->
+          <nav class="flex justify-around hidden sm:block">
+            <a href="#" class="px-4">Contact</a>
+            <a href="#" class="px-4">Help</a>
+            <a href="#" class="px-4">Login</a>
+            <a href="#" class="px-4">English</a>
+          </nav>
         </div>
-        <!-- Menu -->
-        <nav class="navbar-menu navbar-end prueba">
-          <a href="#" class="navbar-item navbar-font">Contact</a>
-          <a href="#" class="navbar-item navbar-font">Help</a>
-          <a href="#" class="navbar-item navbar-font">Login</a>
-          <a href="#" class="navbar-item navbar-font">English</a>
-        </nav>
         <!-- /Menu -->
       </div>
-    </nav>
     <!-- /Header -->
 
-    <section class="container">lakjsdkajd</section>
+    <!-- <section class="container">lakjsdkajd</section> -->
   </body>
 </html>
