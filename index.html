@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Payex Tailwindcss</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/debug.css">
+    <!-- <link rel="stylesheet" href="css/debug.css"> -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="./images/favicon.ico">
   </head>
@@ -15,22 +15,31 @@
   <body>
 
     <!-- Header -->
+    <div class="bg-white shadow-md">
       <div class="container mx-auto p-4">
-        <div class="flex flex-row items-center justify-between"
+        <div class="flex flex-row p-3 items-center justify-between"
           <!-- Logo Escuela -->
           <div class="">
               <img src="./images/school-logo.png"/>
           </div>
           <!-- Menu -->
-          <nav class="flex justify-around hidden sm:block">
+          <nav class="flex justify-around hidden sm:block text-sm">
             <a href="#" class="px-4">Contact</a>
             <a href="#" class="px-4">Help</a>
             <a href="#" class="px-4">Login</a>
-            <a href="#" class="px-4">English</a>
+            <a href="#" class="px-4">English
+              <div class="block">
+                <span class=""></span>
+              </div>
+            </a>
           </nav>
+          <div class="block sm:hidden ">
+            <img src="./images/hamburguer.svg"/>
+          </div>
         </div>
         <!-- /Menu -->
       </div>
+    </div>
     <!-- /Header -->
 
     <!-- <section class="container">lakjsdkajd</section> -->

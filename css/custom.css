@@ -1,3 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
+
 body {
 	margin: 0;
 	font-family: "Rubik", "Open Sans", "Segoe UI", "Tahoma", sans-serif;
@@ -9,8 +27,4 @@ body {
 	background-color: #fafafa;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.navbar-font {
-    font-size: 14px;
 }
