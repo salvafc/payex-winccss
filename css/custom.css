@@ -28,3 +28,68 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+
+.NavBar-Menu li {
+	display: inline-block;
+}
+
+.NavBar-Menu a:hover {
+	color: rgba(27, 39, 51, 0.6);
+}
+
+.NavBar-Menu a {
+	transition: color 0.2s;
+}
+
+
+.language-selector:before{
+	background-image: url(../images/earth-icon.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 1rem;
+	width: 1.4rem;
+	height:1rem;
+	content: "";
+	display: inline-block;
+}
+
+.language-selector:after{
+	background-image: url(../images/ico-dropdown.svg);
+	background-repeat: no-repeat;
+	background-position: 5px 8px;
+	background-size: 0.65rem;
+	width: 1.4rem;
+	height:1rem;
+	content: "";
+	display: inline-block;
+}
+
+.dropdown:hover .dropdown-options {
+	display: block;
+}
+
+
+.dropdown-options {
+	position: absolute;
+	right: 0;
+	display: none;
+	background-color: white;
+	width: 226px;
+	border-radius: 5px;
+	z-index: 1;
+	border: 1px solid #dae0e4;
+	padding: 10px 0;
+	margin-top: 12px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-options li{
+	padding:10px 20px;
+	display: block;
+}
+
+.dropdown-options li:hover{
+	background-color: #f5f8fa;
+	cursor: pointer;
+}

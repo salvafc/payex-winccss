@@ -23,16 +23,22 @@
               <img src="./images/school-logo.png"/>
           </div>
           <!-- Menu -->
-          <nav class="flex justify-around hidden sm:block text-sm">
-            <a href="#" class="px-4">Contact</a>
-            <a href="#" class="px-4">Help</a>
-            <a href="#" class="px-4">Login</a>
-            <a href="#" class="px-4">English
-              <div class="block">
-                <span class=""></span>
-              </div>
-            </a>
-          </nav>
+          <ul class="flex flex-row justify-around hidden sm:block text-sm NavBar-Menu">
+            <li class="px-4 w-auto"><a href="#">Contact</a></li>
+            <li class="px-4 w-auto"><a href="#">Help</a></li>
+            <li class="px-4 w-auto"><a href="#">Login</a></li>
+            <li class="px-4 w-auto relative dropdown">
+              <a href="#" class="language-selector">English</a>
+              <ul class="dropdown-options">
+                <li>中文</li>
+                <li>Español</li>
+                <li>한국어</li>
+                <li>日本語</li>
+                <li>Français</li>
+                <li>Português</li>
+              </ul>
+            </li>
+          </ul>
           <div class="block sm:hidden ">
             <img src="./images/hamburguer.svg"/>
           </div>
