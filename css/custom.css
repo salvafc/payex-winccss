@@ -27,6 +27,7 @@ body {
 	background-color: #fafafa;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	counter-reset: wizard-step;
 }
 
 
@@ -120,7 +121,16 @@ body {
 	color: #5a687b;
 }
 
+.wizard > ul li::before {
+	counter-increment: wizard-step;
+	content: counter(wizard-step);
+}
+
+.wizard > ul li:last-child {
+	border-left: 1px solid #e0e0e3;
+}
+
 .selected {
-	color: #1b2733;
+	color: #1b2733 !important;
 	font-weight: 500;
 }
