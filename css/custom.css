@@ -42,6 +42,10 @@ h3{
 	font-size: 2rem;
 }
 
+h2 {
+	font-size: 1.25rem;
+}
+
 
 .NavBar-Menu li {
 	display: inline-block;
@@ -167,4 +171,70 @@ h3{
 
 .button-primary:hover{
 	background-color: #1a8be9;
+}
+
+label, input {
+	transition: all 0.2s;
+}
+
+input, select {
+	display: block;
+	width: 100%;
+	font-family: "Rubik", "Open Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	color: #1b2733;
+	background-color: #fff;
+	border: 1px solid #dae0e4;
+	border-radius: 2px;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-transition: 200ms border, background, color ease-in-out, -webkit-box-shadow;
+	transition: 200ms border, background, color ease-in-out, -webkit-box-shadow;
+	transition: 200ms border, background, box-shadow, color ease-in-out;
+	transition: 200ms border, background, box-shadow, color ease-in-out, -webkit-box-shadow;
+	will-change: border, background, color;
+	height: 48px;
+	padding: 0 9.6px;
+	line-height: normal;
+	font-size: 14px;
+}
+
+input:focus {
+	border: 1px solid #147bd1;
+	padding-top: 1rem;
+}
+
+input + label {
+	font-size: .875rem;
+	color: #5A687B;
+	padding-left: 14px;
+	line-height: 1rem;
+	cursor: text;
+	max-width: 66.66%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transform-origin: left bottom;
+	transform: translate(0, 2.125rem) scale(1);
+}
+
+input:focus + label {
+  transform: translate(0, 24px) scale(1);
+  cursor: text;
+	font-size: .75rem;
+	padding-left: .6875rem;
+}
+
+.hints {
+	font-size: 12px;
+	font-weight: 500;
+	color: #657a8d;
+	padding-top: .5rem;
+}
+
+.trans {
+	transition: all 200ms ease-out;
+
 }

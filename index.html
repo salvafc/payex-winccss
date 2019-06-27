@@ -68,12 +68,24 @@
       <div>
         <header class="flex justify-center items-center pt-24 pb-12"><h3>Your payment</h3>
         </header>
-        <div class="flex mb-6">
-          <div class="w-2/4"><h2>The payment will come from</h2>
 
+        <div class="flex flex-wrap justify-between mb-6">
+
+          <div class="mb-6 w-full md:w-1/2 md:pr-8 trans">
+            <h2 class="mb-6">The payment will come from</h2>
+            <form class="flex flex-col-reverse">
+              <input id="country" type="text">
+              <label for="country">Country or Region *</label>
+            </form>
           </div>
 
-          <div class="w-2/4"><h2>Boston University receives</h2>
+          <div class="mb-6 w-full md:w-1/2 md:pr-8 trans">
+            <h2 class="mb-6">Boston University receives</h2>
+            <form class="flex flex-col-reverse">
+              <p class="hints">Amount will be formatted in the destination currency, in this case United States Dollars. i.e. 10,000.00 for ten thousand USD.</p>
+              <input id="amount" type="text">
+              <label for="amount">Amount *</label>
+            </form>
           </div>
         </div>
 
@@ -82,5 +94,6 @@
         </footer>
       </div>
     </section>
+    <footer class="footer-app bg-white w-full"> test</footer>
   </body>
 </html>
