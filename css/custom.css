@@ -1,3 +1,14 @@
+:root {
+	--primary-color: #1B2733;
+	--secondary-color: #5A687B;
+	--border-color: #E0E0E3;
+	--background-color: #FAFAFA;
+	--brand-color:#147BD1;
+
+}
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700&subset=latin-ext);
@@ -20,17 +31,19 @@ html, body {
 	height: 100%;
 }
 
+
+
 body {
 	margin: 0;
 	font-family: "Rubik", "Open Sans", "Segoe UI", "Tahoma", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #1b2733;
+	color: var(--primary-color);
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	background-color: #fafafa;
+	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	counter-reset: wizard-step;
@@ -50,6 +63,14 @@ h3{
 
 h2 {
 	font-size: 1.25rem;
+}
+
+.text-s{
+	color: var(--secondary-color);
+}
+
+.text-p{
+	color: var(--primary-color);
 }
 
 
@@ -140,7 +161,7 @@ h2 {
 }
 
 .wizard > ul li {
-	color: #5a687b;
+	color: var(--secondary-color);
 }
 
 .wizard > ul li::before {
@@ -149,12 +170,22 @@ h2 {
 }
 
 .wizard > ul li:last-child {
-	border-left: 1px solid #e0e0e3;
+	border-left: 1px solid var(--border-color);
 }
 
 .selected {
 	color: #1b2733 !important;
 	font-weight: 500;
+}
+
+.past-step {
+	color: #3fc788 !important;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.past-step:hover {
+	color: #159A5C;
 }
 
 .button {
@@ -170,13 +201,24 @@ h2 {
 }
 
 .button-primary{
-	background-color: #147bd1;
+	background-color: var(--brand-color);
 	color: white;
 	text-transform: uppercase;
 }
 
 .button-primary:hover{
 	background-color: #1a8be9;
+}
+
+.button-secondary{
+	background-color: white;
+	color: #147bd1;
+	text-transform: uppercase;
+	border: 1px solid var(--border-color);
+}
+
+.button-secondary:hover{
+	background-color: #f1f1f1;
 }
 
 label, input {
@@ -214,7 +256,7 @@ input:focus {
 
 input + label {
 	font-size: .875rem;
-	color: #5A687B;
+	color: var(--secondary-color);
 	padding-left: 14px;
 	line-height: 1rem;
 	cursor: text;
@@ -250,15 +292,34 @@ input:focus + label {
 }
 
 .footer-main-app p {
-	color: #5a687b;
+	color:var(--secondary-color);
 	font-size: .75rem;
 
 }
 
 .footer-main-app a {
-	color: #147bd1;
+	color: var(--primary-color);
 }
 
 .footer-main-app a:hover {
 	text-decoration: underline;
+}
+
+
+/* BPG */
+
+.bpg {
+	border: 2px solid #dae0e4;
+}
+
+.laurel{
+	top: -1.5rem;
+	left: 6.25rem;
+}
+
+.payment-option-body {
+	background: white;
+	border: 1px solid var(--border-color);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+	border-radius: 2px;
 }

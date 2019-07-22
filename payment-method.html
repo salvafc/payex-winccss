@@ -51,8 +51,8 @@
     <div class="w-full border-b">
       <nav class="container mx-auto px-4 hidden md:block wizard">
         <ul class="flex h-16 flex-row justify-around content-center mx-auto text-sm">
-          <li class="flex flex-1 h-full items-center justify-center inline-block selected">. Payment Info</li>
-          <li class="flex flex-1 h-full items-center justify-center inline-block">. Payment Options</li>
+          <li class="flex flex-1 h-full items-center justify-center inline-block past-step">.<a href="./index.html">Payment Info</a></li>
+          <li class="flex flex-1 h-full items-center justify-center inline-block selected">. Payment Options</li>
           <li class="flex flex-1 h-full items-center justify-center inline-block">. Payer Info</li>
           <li class="flex flex-1 h-full items-center justify-center inline-block">. Student Info</li>
           <li class="flex flex-1 h-full items-center justify-center inline-block">. Review & Confirm</li>
@@ -66,31 +66,40 @@
 
     <section class="container mx-auto max-w-3xl p-4 mb-20 main-app">
       <div>
-        <header class="flex justify-center items-center pt-24 pb-12"><h3>Your payment</h3>
+        <header class="flex justify-center items-center pt-24 pb-12">
+          <h3>Select your preferred payment method</h3>
         </header>
-
+        <!-- App -->
         <div class="flex flex-wrap justify-between mb-6">
+          <div class="mb-6 w-full trans">
+            <!-- BPG -->
+            <div class="bpg mb-8 p-1 rounded-sm">
+              <a href="#">
+                <div class="flex justify-center flex-wrap md:flex-no-wrap relative">
+                  <img class="md:absolute laurel" src="./images/bpg.svg"/>
+                  <div class="flex flex-wrap md:flex-no-wrap w-full md:w-auto">
+                    <p class="text-sm text-p font-medium pr-2 w-full md:w-auto">Best Price Guaranteed</p>
+                    <p class="text-sm text-s">Subject to terms and conditions</p>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-          <div class="mb-6 w-full md:w-1/2 md:pr-8 trans">
-            <h2 class="mb-6">The payment will come from</h2>
-            <form class="flex flex-col-reverse">
-              <input id="country" type="text">
-              <label for="country">Country or Region *</label>
-            </form>
+            <div class="payment-options">
+              <div class="payment-option-body">Payment 1</div>
+
+            </div>
+
+
           </div>
 
-          <div class="mb-6 w-full md:w-1/2 md:pr-8 trans">
-            <h2 class="mb-6">Boston University receives</h2>
-            <form class="flex flex-col-reverse">
-              <p class="hints">Amount will be formatted in the destination currency, in this case United States Dollars. i.e. 10,000.00 for ten thousand USD.</p>
-              <input id="amount" type="text">
-              <label for="amount">Amount *</label>
-            </form>
-          </div>
         </div>
 
-        <footer class="flex justify-end">
-          <a href="payment-method.html"><button class="button button-primary w-full md:w-auto">next</button></a>
+        <footer class="w-full">
+          <div class="w-full flex justify-between">
+            <a href="./index.html"><button class="button button-secondary w-full md:w-auto">previous</button></a>
+            <a href="#"><button class="button button-primary w-full md:w-auto">next</button></a>
+          </div>
         </footer>
       </div>
     </section>
