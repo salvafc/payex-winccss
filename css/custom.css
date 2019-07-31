@@ -73,6 +73,10 @@ h2 {
 	color: var(--primary-color);
 }
 
+.text-l{
+	color: var(--brand-color);
+}
+
 
 .NavBar-Menu li {
 	display: inline-block;
@@ -298,7 +302,7 @@ input:focus + label {
 }
 
 .footer-main-app a {
-	color: var(--primary-color);
+	color: var(--brand-color);
 }
 
 .footer-main-app a:hover {
@@ -322,4 +326,45 @@ input:focus + label {
 	border: 1px solid var(--border-color);
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
 	border-radius: 2px;
+}
+
+.payment-option-more-info, .payment-info-toggle {
+	background-color: #f9fafa;
+}
+
+.more-info{
+	padding: 0;
+	cursor: pointer;
+}
+
+.more-info:after{
+	background-image: url(../images/arrow-more-info.svg);
+	background-repeat: no-repeat;
+	background-position: 5px 8px;
+	background-size: 0.65rem;
+	width: 1.4rem;
+	height:1rem;
+	content: "";
+	display: inline-block;
+}
+
+.toggle{
+	display: none;
+}
+.payment-toggle {
+	display: none;
+}
+
+.payment-option-more-info + input {
+	display: none;
+}
+
+.payment-option-more-info input:checked ~ .toggle {
+  display: block;
+}
+
+.payment-option-more-info input:checked ~ .more-info:after {
+	transform: rotateX(180deg);
+	margin-bottom: -5px;
+
 }
